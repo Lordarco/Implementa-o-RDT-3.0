@@ -100,6 +100,7 @@ Tempo total, ACKs recebidos, Retransmissões, Taxa de Retransmissões, Throughpu
 ## Desenvolvimento
 
 Observa-se que o tempo total não cresce proporcionalmente ao número de mensagens.
+
 Exemplo:
 10 → 13,36 s
 213 → 14,26 s (quase o mesmo tempo com 21× mais pacotes)
@@ -118,9 +119,10 @@ Isso indica que:
 
 Aqui vemos o melhor indicador de desempenho:
 
-Msg ↑	Throughput ↑
-10 msgs → 0,10 Kbps
-213 msgs → 2,05 Kbps
+|Mensagens |Throughput |
+|:--------:|:---------:|
+|10        | 0,10 Kbps |
+|213       | 2,05 Kbps |
 
 - Por que enviar mais pacotes aumenta o throughput?
 
@@ -145,7 +147,9 @@ Timeout Interval	Minimiza retransmissões desnecessárias
 ## Conclusão
 
 ✔ O RDT 3.0 foi implementado com sucesso
+
 ✔ A transmissão ocorreu com entrega garantida e ordenada
+
 ✔ O protocolo corrigiu erros automaticamente
 
 ## Referências
